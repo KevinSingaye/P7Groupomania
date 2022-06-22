@@ -1,0 +1,20 @@
+<div class="loginFrm">
+    <form action="" class="form">
+        <h1 class="title">Login</h1>
+
+        <div class="inputContainer">
+            <input name="identifiant" [(ngModel)]="identifiant" type="text" class="input" placeholder="a">
+            <label for="" class="label">Identifiant</label>
+        </div>
+
+
+        <div class="inputContainer">
+            <input name="password" [(ngModel)]="motDePasse" type="text" class="input" placeholder="a">
+            <label for="" class="label">Mot de passe</label>
+        </div>
+
+
+        <input (click)="onLogin()" type="submit" class="submitBtn" value="Login">
+
+    </form>
+</div>
