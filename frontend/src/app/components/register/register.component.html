@@ -1,1 +1,39 @@
-<p>register works!</p>
+<body>
+
+
+    <div class="wrapper login">
+        <div class="container">
+            <div class="col-left">
+                <div class="login-text">
+                    <h2>Groupomania</h2>
+
+
+                </div>
+            </div>
+
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Register</h2>
+                    <form action="">
+                        <p>
+                            <label for="" class="label">Identifiant</label>
+                            <input name="identifiant" [(ngModel)]="identifiant" type="text" class="input" placeholder="">
+                        </p>
+                        <p>
+                            <label for="" class="label">Mot de passe</label>
+                            <input name="password" [(ngModel)]="motDePasse" type="text" class="input" placeholder="">
+                        </p>
+                        <p>
+                            <input (click)="onRegister()" type="submit" value="register">
+                        </p>
+                        <p>
+
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
