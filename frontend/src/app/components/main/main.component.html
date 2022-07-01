@@ -1,2 +1,584 @@
-<p>main works!</p>
-<app-publications *ngFor="let item of publications" [publication]="item"> </app-publications>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Groupomania</title>
+
+    <!-- Iconscout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- STYLESHEET-->
+    <link rel="stylesheet" href="./main.component.css">
+</head>
+
+<body>
+    <nav>
+
+        <div class="container">
+            <h2 class="log">
+                Groupomania
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Seach for creators, inspirations, and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="/images/profile-1.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-------      MAIN ---------------->
+    <main>
+        <div class="container">
+            <!-- LEFT-->
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img src="/images/profile-1.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Diana ayi</h4>
+                        <p class="text-muted">
+                            @dayi
+                        </p>
+                    </div>
+                </a>
+                <!-- SIDE BAR-->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+
+                    <a class="menu-item ">
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+
+                    <a class="menu-item " id="notifications">
+                        <span><i class="uil uil-bell" > <small class="notification-count">9+ </small></i></span>
+                        <h3>Notifications</h3>
+                        <!---------- NOTIFICATION POP UP-->
+
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/images/profile-2.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> Keke P</b> accepted your friend request
+                                    <small class="text-muted"> 2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/images/profile-3.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> Amelia </b> commented on your post your are tagged in
+                                    <small class="text-muted"> 1 DAY AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/images/profile-4.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> Lilou </b> and <b>200 others</b> like your post
+                                    <small class="text-muted"> 4 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/images/profile-5.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> Cake V </b> commented on your post
+                                    <small class="text-muted"> 5 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/images/profile-6.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> Sikou </b> commented on your post
+                                    <small class="text-muted"> 1 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="/images/profile-7.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b> Benga </b> commented on your post
+                                    <small class="text-muted"> 1 DAY AGO</small>
+                                </div>
+                            </div>
+                            <!---------- END NOTIFICATION POP UP-->
+                        </div>
+                    </a>
+
+                    <a class="menu-item" id="messagesNotification">
+                        <span><i class="uil uil-envelope-alt" ><small class="notification-count">6</small></i></span>
+                        <h3>Messages</h3>
+                    </a>
+
+                    <a class="menu-item ">
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+
+                    <!-----------------END SIDE BAR-------------------->
+                    <label for="create-post" class="btn btn-primary"> Create Post</label>
+                </div>
+                <!-----------------END OF LEFT-------------------->
+
+            </div>
+
+
+
+            <!----------------------MIDDLE------------------>
+            <div class="middle">
+                <!----------------------STORIES------------------>
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/profile-8.jpg">
+                        </div>
+                        <p class="name">Your story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/profile-9.jpg">
+                        </div>
+                        <p class="name">Lila James</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/profile-10.jpg">
+                        </div>
+                        <p class="name">Johanna Refour</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/profile-11.jpg">
+                        </div>
+                        <p class="name">Quentin Deloyau</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="/images/profile-12.jpg">
+                        </div>
+                        <p class="name">Olivier Porte</p>
+                    </div>
+                </div>
+
+                <!---------END OF STORIES  ----------->
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img src="/images/profile-1.jpg">
+                    </div>
+                    <input type="text" placeholder="A quoi penses-tu?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <!--------------FEEDS--------------->
+                <div class="feeds">
+
+                    <!--------------FEED--------------->
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="/images/profile-13.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3> Lana rose</h3>
+                                    <small> Dubai, 16 MINUTES AGO </small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i> 
+                                </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/feed-1.jpg">
+                        </div>
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i> </span>
+                            </div>
+                            <div class="bookmark">
+                                <span> <i class=" uil uil -bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="/images/profile-10.jpg "> </span>
+                            <span><img src="/images/profile-4.jpg"> </span>
+                            <span><img src="/images/profile-15.jpg"> </span>
+                            <p>liked by <b> Thomas </b> et <b>323 autres</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p> <b> Thomas</b> blablablablabla <span class="harsh-tag">#lifestyle</span></p>
+                        </div>
+
+                        <div>
+                            <div class=" comments text-muted"> Voir les 277 commentaires</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------End OF FEEDS--- -->
+            </div>
+
+            <!--------End OF MIDDLE--- -->
+
+
+            <!--                  RIGHT           -->
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4> Messages</h4> <i class="uil uil-edit"></i>
+                    </div>
+                    <!-------SEARCH BAR ------->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+
+                    <!----------MESSAGE----------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/images/profile-17.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Pascal</h5>
+                            <p class="text-muted">Just woke up bruh</p>
+                        </div>
+                    </div>
+
+
+                    <!----------MESSAGE----------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/images/profile-8.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Quinta</h5>
+                            <p class="text-bold">2 new messages</p>
+                        </div>
+                    </div>
+
+                    <!----------MESSAGE----------->
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="/images/profile-4.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Edem Quist</h5>
+                            <p class="text-bold"> j'arriiiive </p>
+                        </div>
+                    </div>
+
+                    <!----------END OF MESSAGES----------->
+
+                    <!----------FRIEND REQUESTS----------->
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./main.component.js"></script>
+</body>
+
+</html>
